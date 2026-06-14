@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS50 Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3 fw-bold text-primary" href="#">Patient's Dashboard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="#">My Medication</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="{{ url_for('login') }}">Staff In-charge</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="#">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="{{ url_for('chat') }}">Contacts</a>
+
+                        </li>
+
+                    </ul>
+                    <a class="btn btn-danger ms-lg-3" href="login.html">Sign Out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="overview container mb-5">
+        <div class="text-center mb-4">
+            <h1 class="fs-4 text-dark fw-bold">Welcome to Your Portal!</h1>
+            <p class="fs-5 text-muted">Below is the overview of your medication summary with the next dosage and its schedule.</p>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-primary text-center">
+                    <tr>
+                        <th>Medication Name</th>
+                        <th>Next Dosage</th>
+                        <th>Next Dosage Time</th>
+                        <th>Remaining Dosage</th>
+                        <th>Full Dosage Time</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td>Paracetamol</td>
+                        <td>2 tabs</td>
+                        <td>2:00 PM</td>
+                        <td>41 tabs</td>
+                        <td>21/12/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <div class="p-4 bg-white shadow rounded">
+            <h2 class="fs-3 fw-bold text-primary mb-3">Description of the Medication</h2>
+            <h3>Paracetamol</h3>
+            <p class="fs-5 text-muted">Paracetamol is mainly made out of caffeine with the purpose of reducing body pain. It is advised not to take paracetamol on an empty stomach, as this can cause severe stomach issues. You are advised to drink plenty of water after using paracetamol to reduce the effects of stomach ulcers.</p>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <div class="p-4 bg-light shadow rounded">
+            <h2 class="fs-5 fw-bold text-primary">Your Health Condition</h2>
+            <p class="fs-6 text-muted">According to your medication summary, we expect you to feel better, walk, and handle personal tasks independently. <br><em>If you do not feel as expected, please contact your in-charge for further assessment.</em></p>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <div class="p-4 bg-white shadow rounded">
+            <h2 class="fs-5 fw-bold text-primary">Staff In-Charge of You</h2>
+            <p class="fs-6 text-muted">Doctor Moses Ali is responsible for your effective healing and recovery. Don't hesitate to reach out to him in case of any emergency or inquiries.</p>
+            <p>Email: <a href="mailto:sserwangaedrisa@gmail.com" class="text-primary">sserwangaedrisa@gmail.com</a></p>
+            <form class="mt-3" method="post" action="/chat">
+                <input type="hidden" name="talk_to_doc">
+                <button type="submit" class="btn btn-primary">Talk to Moses</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white py-3 text-center">
+        <p class="mb-0">© 2024 Patient's Dashboard. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
