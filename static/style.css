@@ -1,0 +1,97 @@
+body{
+    margin: 2px;
+    background-color: #ededdf;
+
+
+}
+  .center {
+    display: grid;
+    justify-items: center;
+    align-items: start;
+  }
+
+
+nav{
+    width: 100%;
+    background-color: green;
+    margin: auto;
+    height: 10vh;
+}
+.nav-div{
+    width: 60%;
+}
+
+.home{
+    padding-right: %;
+}
+
+.login{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+#cover_section{
+    background: url('https://hmcarchitects.com/wp-content/uploads/1152023000_N3_hmcfull-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    padding-left:10%;
+    box-shadow: 2px 2px 4px black;
+    margin-left: 20%;
+    margin-right:20%;
+    width: 60%;
+    }
+
+/* The chat page */
+
+.chat-box {
+    height: 60vh;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+.message-left, .message-right {
+    background-color: #e9ecef;
+    max-width: 75%;
+    widith: fit-content;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.message-left {
+    background-color: #e9ecef;
+    border-radius: 2px;
+    width: fit-content;
+    height: fit-content;
+    width-max: 70%;
+
+    color: #343a40;
+    align-self: flex-start;
+}
+.message-right {
+    background-color: #e8faf6;
+    border-radius: 5px;
+    color: black;
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    align-self: flex-end;
+}
+
+.time{
+    font-weight: 0.5rem;
+    font-size: 0.5rem;
+    margin-left: 5%;
+}
