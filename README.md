@@ -35,8 +35,9 @@ The platform also integrates AI-assisted medical search capabilities to provide 
 ### Real-Time Communication
 
 * Socket.IO
+  
 
-### AI Integration
+### AI Integration 
 
 * AI-powered medical search and diagnostic assistance
 
@@ -51,10 +52,13 @@ Watch the live project demonstration on YouTube:
 The platform connects patients and healthcare providers through a centralized system that supports:
 
 * Patient health monitoring
+  ![Dashboard](assets/patientDashboard.png)
 * Recovery progress tracking
 * Real-time messaging
+   ![Chat](assets/realtimeChat.png)
 * Emergency notifications
 * AI-assisted healthcare support
+  ![ChatBot](assets/chatbot.png)
 
 ##  Installation
 
@@ -64,17 +68,19 @@ The platform connects patients and healthcare providers through a centralized sy
 git clone https://github.com/your-username/Hospital_Patient_Connect.git
 cd Hospital_Patient_Connect
 ```
+### Installation
+```pip install -r requirements.txt```
 
 
 
-### Configure MySQL Database
+### Configure SQLite Database
 
 Update your database configuration settings in the application before running the server.
 
 ### Run the application
 
 ```bash
-python app.py
+flask run
 ```
 
 ##  Project Objectives
