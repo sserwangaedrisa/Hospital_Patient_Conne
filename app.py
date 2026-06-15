@@ -190,7 +190,6 @@ def login():
         session['username'] = username
 
         user = Users.query.filter_by(username=username).first()
-        print('user', user.role, user.status, user.email)
         if user.role == 'patient':
             user.status = 1
             db.session.add(user)
