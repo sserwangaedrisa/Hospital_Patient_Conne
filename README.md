@@ -3,6 +3,7 @@
 Hospital Patient Connect is a web-based healthcare monitoring platform designed to improve communication and patient care for individuals receiving treatment at home. The system enables healthcare providers to remotely monitor patient recovery, respond to emergencies, and maintain real-time communication with patients.
 
 The platform also integrates AI-assisted medical search capabilities to provide basic diagnostic guidance and health information.
+https://hospital-patient-conne.onrender.com    
 
 ##  Features
 
@@ -46,6 +47,8 @@ The platform also integrates AI-assisted medical search capabilities to provide 
 Watch the live project demonstration on YouTube:
 
 [🔗 YouTube Demo] https://www.youtube.com/watch?v=X87nDdr1t8s
+[🔗 Live Demo] https://hospital-patient-conne.onrender.com
+Login as a patient with username: 'sserwanga' or as a staff with username: 'doctor1' or register new accounts for a staff and patient
 
 ##  System Overview
 
